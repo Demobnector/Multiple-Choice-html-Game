@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>level 5</title>
+	<h1 style="font-family:lucida Sans;text-align:center;font-size:50px;" class="happy">5. How do you get <br>''<u>Smooth Stone?</u>''</h1>
+	<table>
+		<tr>
+			<td><button class="G" onclick="wrong()">A. Mining</button></td>
+			<td><button class="G" onclick="wrong()">B. Crafting</button></td>
+		</tr>
+		<tr>
+			<td><button class="G" onclick="right()">C. Smelting</button></td>
+			<td><button class="G" onclick="wrong()">D. Grinding</button></td>
+		</tr>
+	</table>
+	<style>
+table,tr,td {
+	border:2px solid black;
+	padding:5px;
+	text-align:center;
+}
+td {
+	height:200px;
+	width:700px;
+}
+table {
+	background-color:#ffbdbd;
+}
+button.G {
+	border:2px solid blue;
+	width:100%;
+	height:100%;
+	background-color:lightblue;
+	transition:0.2s;
+	font-size:50px;
+}
+button.G:hover {
+	border:2px solid blue;
+	background-color:blue;
+}
+button.G:active {
+	border:2px solid black;
+	background-color:darkblue;
+}
+.happy {
+	background-color:yellow;
+	border:5px solid black;
+	padding:8px;
+}
+	</style>
+</head>
+<body style="background-color:#fd0000">
+	<script>
+function wrong() {
+	playsound();
+	alert('Wrong (back to lvl 3)');
+	location.href="level 3.html";
+}
+function right() {
+	playsound();
+	location.href="level 6.html";
+}
+	</script>
+	
+<audio id="audio" src="J:/Multiple Choice html game 2/Sounds & Musics/button-28.wav" autoplay="true"></audio>
+	<script>
+function playsound() {
+	var sound = document.getElementById("audio");
+	sound.play();
+}
+	</script>
+</body>
+</html>

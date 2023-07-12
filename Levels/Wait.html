@@ -1,0 +1,59 @@
+<head>
+	<title>Generating Map</title>
+</head>
+<body onload="generate()">
+	<style>
+table, tr, td {
+	width:100%;
+	font-size:45px;
+	text-align:center;
+	padding:15px;
+	position:relative;
+	top:30%;
+	transition:0.5s;
+	border-collapse:collapse;
+	font-family:helvetica;
+}
+.fd {
+	transition:0.5s;
+}
+	</style>
+		<table>
+			<tr>
+				<td><p id="gq" class="fd">Generating Questions</p></td>
+			</tr>
+			<tr>
+				<td><a id="per" class="per">0</a>%</td>
+			</tr>
+		</table>
+	<script>
+function generate() {
+var x = document.getElementById("gq");
+var y = document.getElementById("per");
+	setTimeout(function(){x.innerHTML = "Generating Questions."}, 1000);
+	setTimeout(function(){x.innerHTML = "Generating Questions.."}, 2000);
+	setTimeout(function(){x.innerHTML = "Generating Questions..."}, 3000);
+	setTimeout(function(){y.innerHTML = 25}, 4000);
+	setTimeout(function(){x.innerHTML = "Generating Questions"}, 4000);
+	setTimeout(function(){x.style.opacity = ("0");}, 5000);
+	setTimeout(function(){x.innerHTML = "Generating Questions."}, 5000);
+	setTimeout(function(){x.innerHTML = "Generating Styles"}, 5500);
+	setTimeout(function(){x.style.opacity = ("1");}, 6000);
+	setTimeout(function(){x.innerHTML = "Generating Styles."}, 7000);
+	setTimeout(function(){y.innerHTML = 49}, 7000);
+	setTimeout(function(){x.innerHTML = "Generating Styles.."}, 8000);
+	setTimeout(function(){x.innerHTML = "Generating Styles..."}, 9000);
+	setTimeout(function(){x.innerHTML = "Generating Styles"}, 10000);
+	setTimeout(function(){x.style.opacity = ("0");}, 11000);
+	setTimeout(function(){x.innerHTML = "Generating Styles."}, 11000);
+	setTimeout(function(){y.innerHTML = 76}, 11000);
+	setTimeout(function(){x.style.opacity = ("1");}, 12000);
+	setTimeout(function(){x.innerHTML = "Generating Buttons"}, 12000);
+	setTimeout(function(){x.innerHTML = "Generating Buttons."}, 13000);
+	setTimeout(function(){x.innerHTML = "Generating Buttons.."}, 14000);
+	setTimeout(function(){x.innerHTML = "Generating Buttons..."}, 15000);
+	setTimeout(function(){y.innerHTML = 100}, 15000);
+	setTimeout(function(){location.href="level 1.html"}, 17000);
+}
+	</script>
+</body>

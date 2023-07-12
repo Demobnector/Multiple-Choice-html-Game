@@ -1,0 +1,112 @@
+<head>
+	<title>Multiple Choice Game 2</title>
+	<style>
+table {
+	border:3px solid black;
+	width:500px;
+	height:500px;
+	background-color:white;
+}
+p.thetitle {
+	position:absolute;
+	border:3px solid black;
+	background-color:lime;
+	padding:10px;
+	text-align:center;
+	font-family:Courier New;
+	transition:2s;
+	font-size:20px;
+	left:40%;
+	top:10px;
+}
+p.thetitle:hover {
+	background-color:yellow;
+	font-family:Courier New;
+	font-size:30px;
+	padding:10px;
+	left:34%;
+	top:0px;
+}
+th {
+	border:3px solid black;
+	background-color:white;
+	padding:5px;
+	text-align:center;
+	height:65%;
+}
+td {
+	border:3px solid black;
+	background-color:white;
+	padding:5px;
+	text-align:center;
+}
+button {
+	border:5px solid black;
+	background-color:lime;
+	padding:5px;
+	font-size:35px;
+	width:50%;
+	transition:0.2s;
+}
+button:hover {
+	background-color:green;
+	font-size:35px;
+}
+button:active {
+	background-color:darkgreen;
+	font-size:35px;
+}
+td.boi {
+	border:3px solid black;
+	background-color:white;
+	padding:5px;
+	text-align:center;
+	height:10%;
+}
+.credits {
+	font-family:arial;
+}
+a.link {
+	transition:0.5s;
+}
+a.link:link {
+	color:blue;
+}
+a.link:hover {
+	color:darkblue;
+}
+a.link:active {
+	color:black;
+}
+a.visited {
+	color:blue;
+}
+	</style>
+</head>
+<body style="background-color:lightblue;">
+
+<center>
+<table>
+		<td><p class="thetitle">Multiple Choice Game<br>
+		<small>(Minecraft Questions java)</small></p></td>
+	<tr>
+		<th><button onclick="start()">Play</button>
+		<br><br><button onclick="alert('Made by Jin Ganaban. Test game that asking about the minecraft. Please subscribe to Jin Ganaban in youtube. Now i learn how to use locations, styles, and scripts. I am not that creative to create a good style menu designs. I am thinking if I am going to make more levels. Thanks for Playing!!!')">Credits</button></th>
+	</tr>
+	<tr>
+		<td class="boi"><p class="credits">Made by: <b><a class="link" href="https://www,youtube.com/channel/UCD3cLOjPwTW7pTsPLZXNLbQ">Jin Ganaban</a></b></p></td>
+	</tr>
+</table>
+</center>
+	<script>
+function start() {
+try {
+	alert('Lets Go!');
+	location.href="Levels/Wait.html";
+}
+catch(err) {
+	err.location.href="WrongPath.html";
+	}
+}
+	</script>
+</body>
